@@ -100,7 +100,7 @@ export default function MovingHomepage() {
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 via-blue-800/50 to-blue-900/80"></div>
           <Image
-            src="/images/hero/team.png"
+            src="/images/hero/fellas.png"
             alt="Professional Local Moving Company truck in Denver Metro area"
             fill
             className="object-cover brightness-75 scale-105 animate-slow-zoom"
@@ -384,7 +384,7 @@ export default function MovingHomepage() {
         <section id="quote" className="py-24 bg-blue-900 relative overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/images/hero/team.png"
+              src="/images/hero/fellas.png"
               alt="Local Moving Company professional team in Denver"
               fill
               className="object-cover opacity-90"
