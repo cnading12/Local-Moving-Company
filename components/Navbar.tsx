@@ -3,11 +3,10 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Calendar } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const NAV_ITEMS = [
   { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {
@@ -30,10 +29,10 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const current = window.scrollY;
-      
+
       // Change background after scrolling past 50px
       setScrolled(current > 50);
-      
+
       if (current <= 0) {
         setShowNav(true);
         lastScroll.current = 0;
@@ -59,17 +58,16 @@ export default function Navbar() {
       style={{ willChange: 'transform' }}
     >
       {/* Desktop Navbar */}
-      <div className={`w-full transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100' 
+      <div className={`w-full transition-all duration-300 ${scrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100'
           : 'bg-white/80 backdrop-blur-sm'
-      }`}>
+        }`}>
         <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          {/* Logo - Made Bigger */}
+          {/* Logo - Updated for Moving Company */}
           <Link href="/" className="flex items-center shrink-0 z-50 group" tabIndex={0}>
             <Image
               src="/images/hero/logo.png"
-              alt="Merritt Fitness Logo"
+              alt="Local Moving Company Logo"
               width={160}
               height={70}
               className="transition-transform duration-200 group-hover:scale-105"
@@ -86,17 +84,17 @@ export default function Navbar() {
                 className="relative font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 py-2 group"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-600 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
-            
-            {/* Book Now CTA */}
+
+            {/* Contact CTA - Moved to black box */}
             <Link
-              href="/booking"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-gray-900 text-white font-medium px-5 py-2.5 rounded-full hover:bg-gray-800 transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md"
             >
-              <Calendar size={16} />
-              Book Now
+              <Phone size={16} />
+              Contact Us
             </Link>
           </div>
 
@@ -107,34 +105,30 @@ export default function Navbar() {
             onClick={() => setMenuOpen((v) => !v)}
           >
             <div className="relative w-6 h-6">
-              <span className={`absolute top-2 left-0 w-6 h-0.5 bg-current transition-all duration-300 ${
-                menuOpen ? 'rotate-45 top-2.5' : ''
-              }`}></span>
-              <span className={`absolute top-3.5 left-0 w-6 h-0.5 bg-current transition-opacity duration-300 ${
-                menuOpen ? 'opacity-0' : 'opacity-100'
-              }`}></span>
-              <span className={`absolute top-5 left-0 w-6 h-0.5 bg-current transition-all duration-300 ${
-                menuOpen ? '-rotate-45 top-2.5' : ''
-              }`}></span>
+              <span className={`absolute top-2 left-0 w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? 'rotate-45 top-2.5' : ''
+                }`}></span>
+              <span className={`absolute top-3.5 left-0 w-6 h-0.5 bg-current transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'
+                }`}></span>
+              <span className={`absolute top-5 left-0 w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? '-rotate-45 top-2.5' : ''
+                }`}></span>
             </div>
           </button>
         </nav>
       </div>
 
-      {/* Mobile Drawer - FIXED WITH SOLID WHITE BACKGROUND */}
+      {/* Mobile Drawer */}
       <div className={`
         md:hidden fixed inset-0 z-40 transition-all duration-300 ease-in-out
         ${menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
       `}>
         {/* Backdrop */}
-        <div 
-          className={`absolute inset-0 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${
-            menuOpen ? 'opacity-100' : 'opacity-0'
-          }`}
+        <div
+          className={`absolute inset-0 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${menuOpen ? 'opacity-100' : 'opacity-0'
+            }`}
           onClick={() => setMenuOpen(false)}
         ></div>
-        
-        {/* Drawer - NOW WITH SOLID WHITE BACKGROUND */}
+
+        {/* Drawer */}
         <div className={`
           absolute right-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl
           transition-transform duration-300 ease-out
@@ -150,7 +144,7 @@ export default function Navbar() {
             >
               <Image
                 src="/images/hero/logo.png"
-                alt="Merritt Fitness Logo"
+                alt="Local Moving Company Logo"
                 width={140}
                 height={60}
                 priority
@@ -165,7 +159,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Navigation - WITH WHITE BACKGROUND */}
+          {/* Navigation */}
           <nav className="p-6 bg-white">
             <div className="space-y-1">
               {NAV_ITEMS.map((item) => (
@@ -179,19 +173,19 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            
-            {/* Mobile Book CTA - WITH WHITE BACKGROUND */}
+
+            {/* Mobile Contact CTA */}
             <div className="mt-8 pt-6 border-t border-gray-100 bg-white">
               <Link
-                href="/booking"
+                href="/contact"
                 className="flex items-center justify-center gap-2 bg-gray-900 text-white font-semibold py-4 px-6 rounded-2xl hover:bg-gray-800 transition-all duration-200 hover:scale-105 shadow-lg"
                 onClick={() => setMenuOpen(false)}
               >
-                <Calendar size={20} />
-                Book Your Class
+                <Phone size={20} />
+                Contact Us
               </Link>
               <p className="text-center text-sm text-gray-500 mt-3">
-                Ready to begin your journey?
+                Ready to start your move?
               </p>
             </div>
           </nav>

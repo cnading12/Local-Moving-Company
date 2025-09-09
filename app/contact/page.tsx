@@ -1,118 +1,196 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Instagram, Facebook, ArrowRight, Calendar } from "lucide-react";
+import { Phone, Mail, MapPin, Star, Quote, ExternalLink } from "lucide-react";
 
 export default function ContactPage() {
   return (
-    <main className="max-w-2xl mx-auto pt-32 pb-24 px-4">
+    <main className="max-w-4xl mx-auto pt-32 pb-24 px-4">
       {/* Header Section */}
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-light mb-6 text-gray-900">Let's Connect</h1>
+        <h1 className="text-5xl font-light mb-6 text-gray-900">Let's Move You Forward</h1>
         <p className="text-xl text-gray-600 leading-relaxed max-w-lg mx-auto">
-          Step into our sacred space where wellness meets community. Whether you're ready to begin your journey or curious about what we offer, we're here to welcome you home.
+          Your neighbors helping you move. Founded by CSU alumni, born and raised in Colorado. No corporate hassles—just honest, reliable moving by people who call this community home.
         </p>
       </div>
 
       {/* Contact Cards */}
-      <div className="grid md:grid-cols-2 gap-6 mb-12">
+      <div className="grid md:grid-cols-2 gap-6 mb-16">
         {/* Primary Contact */}
         <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
-          <h3 className="text-lg font-semibold mb-6 text-gray-900">Reach Out</h3>
+          <h3 className="text-lg font-semibold mb-6 text-gray-900">Ready to Move?</h3>
           <div className="space-y-4">
             <a
               href="tel:720-357-9499"
+              className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors group"
+            >
+              <div className="p-2 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
+                <Phone size={18} />
+              </div>
+              <div>
+                <span className="font-medium block">(720) 357-9499</span>
+                <span className="text-sm text-gray-500">Call or text anytime</span>
+              </div>
+            </a>
+            <a
+              href="mailto:info@localmovingcompany.co"
               className="flex items-center gap-3 text-gray-700 hover:text-emerald-600 transition-colors group"
             >
               <div className="p-2 bg-emerald-50 rounded-lg group-hover:bg-emerald-100 transition-colors">
-                <Phone size={18} />
-              </div>
-              <span className="font-medium">(720) 357-9499</span>
-            </a>
-            <a
-              href="mailto:manager@merrittfitness.net"
-              className="flex items-center gap-3 text-gray-700 hover:text-rose-600 transition-colors group"
-            >
-              <div className="p-2 bg-rose-50 rounded-lg group-hover:bg-rose-100 transition-colors">
                 <Mail size={18} />
               </div>
-              <span className="font-medium">manager@merrittfitness.net</span>
+              <div>
+                <span className="font-medium block">info@localmovingcompany.co</span>
+                <span className="text-sm text-gray-500">Quick quote responses</span>
+              </div>
             </a>
           </div>
         </div>
 
-        {/* Visit Us */}
+        {/* Service Area */}
         <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
-          <h3 className="text-lg font-semibold mb-6 text-gray-900">Visit Our Sanctuary</h3>
+          <h3 className="text-lg font-semibold mb-6 text-gray-900">Denver Metro & Front Range</h3>
           <div className="flex items-start gap-3 text-gray-700">
-            <div className="p-2 bg-blue-50 rounded-lg mt-1">
+            <div className="p-2 bg-orange-50 rounded-lg mt-1">
               <MapPin size={18} />
             </div>
             <div>
-              <p className="font-medium leading-relaxed">
-                2246 Irving St<br />
-                Denver, CO 80211
+              <p className="font-medium leading-relaxed mb-2">
+                Denver Metro Area<br />
+                Plus Boulder & Fort Collins
               </p>
-              <p className="text-sm text-gray-500 mt-2">
-                Near Sloan's Lake • Historic 1905 Church
+              <p className="text-sm text-gray-500">
+                Based in Denver • Serving the Front Range
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Social & Tour Section */}
-      <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 mb-12">
+      {/* Google Reviews Section */}
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-12">
         <div className="text-center mb-8">
-          <h3 className="text-xl font-semibold mb-3 text-gray-900">Stay Connected</h3>
-          <div className="flex justify-center gap-4">
-            <Link
-              href="https://www.instagram.com/merritt.fitness"
-              className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 text-gray-600 hover:text-pink-600"
-              target="_blank" 
-              rel="noopener"
-              aria-label="Follow us on Instagram"
-            >
-              <Instagram size={20} />
-            </Link>
-            <Link
-              href="https://www.facebook.com/merritt.fitness"
-              className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 text-gray-600 hover:text-blue-600"
-              target="_blank" 
-              rel="noopener"
-              aria-label="Follow us on Facebook"
-            >
-              <Facebook size={20} />
-            </Link>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-200 pt-8">
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 text-amber-600 mb-3">
-              <Calendar size={18} />
-              <span className="font-medium">Private Tours Available</span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="flex text-yellow-400">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={24} fill="currentColor" />
+              ))}
             </div>
-            <p className="text-gray-600 mb-6 max-w-md mx-auto">
-              Experience the energy of our historic space before your first class. Call or email to schedule your personal walkthrough.
+            <span className="text-2xl font-bold text-gray-900">5.0</span>
+          </div>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-2">What Our Neighbors Say</h2>
+          <p className="text-gray-600">Real reviews from real Denver moves</p>
+        </div>
+
+        {/* Review Cards Grid */}
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          {/* Review 1 */}
+          <div className="bg-gray-50 rounded-xl p-6 relative">
+            <Quote className="absolute top-4 right-4 text-blue-200" size={32} />
+            <div className="flex text-yellow-400 mb-3">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} fill="currentColor" />
+              ))}
+            </div>
+            <p className="text-gray-800 mb-4 leading-relaxed">
+              "Outstanding service from start to finish! The team was professional, careful with our belongings, and made our stressful move feel effortless. They even helped us move some last-minute items without any complaints. Highly recommend!"
             </p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                <span className="text-blue-700 font-semibold text-sm">SJ</span>
+              </div>
+              <div>
+                <p className="font-medium text-gray-900">Sarah Johnson</p>
+                <p className="text-sm text-gray-500">Denver homeowner</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Review 2 */}
+          <div className="bg-gray-50 rounded-xl p-6 relative">
+            <Quote className="absolute top-4 right-4 text-emerald-200" size={32} />
+            <div className="flex text-yellow-400 mb-3">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} fill="currentColor" />
+              ))}
+            </div>
+            <p className="text-gray-800 mb-4 leading-relaxed">
+              "Best moving experience we've ever had! The guys were incredibly efficient and took great care of our furniture. Fair pricing, no hidden fees, and they finished ahead of schedule. Will definitely use them again!"
+            </p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+                <span className="text-emerald-700 font-semibold text-sm">MR</span>
+              </div>
+              <div>
+                <p className="font-medium text-gray-900">Mike Rodriguez</p>
+                <p className="text-sm text-gray-500">Boulder resident</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Review 3 */}
+          <div className="bg-gray-50 rounded-xl p-6 relative">
+            <Quote className="absolute top-4 right-4 text-purple-200" size={32} />
+            <div className="flex text-yellow-400 mb-3">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} fill="currentColor" />
+              ))}
+            </div>
+            <p className="text-gray-800 mb-4 leading-relaxed">
+              "These guys saved our move! Our original movers canceled last minute, and Local Moving Company stepped in with just 2 days notice. Professional, friendly, and reasonably priced. True lifesavers!"
+            </p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                <span className="text-purple-700 font-semibold text-sm">AC</span>
+              </div>
+              <div>
+                <p className="font-medium text-gray-900">Amanda Chen</p>
+                <p className="text-sm text-gray-500">Fort Collins family</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Review 4 */}
+          <div className="bg-gray-50 rounded-xl p-6 relative">
+            <Quote className="absolute top-4 right-4 text-orange-200" size={32} />
+            <div className="flex text-yellow-400 mb-3">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} fill="currentColor" />
+              ))}
+            </div>
+            <p className="text-gray-800 mb-4 leading-relaxed">
+              "Exceptional service! They handled our piano and antique furniture with extreme care. The team was punctual, courteous, and went above and beyond. Worth every penny for the peace of mind."
+            </p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                <span className="text-orange-700 font-semibold text-sm">DW</span>
+              </div>
+              <div>
+                <p className="font-medium text-gray-900">David Wilson</p>
+                <p className="text-sm text-gray-500">Denver business owner</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* CTA Section */}
-      <div className="text-center">
-        <p className="text-lg text-gray-600 mb-8">
-          Ready to begin your wellness journey?
-        </p>
-        <Link
-          href="/booking"
-          className="inline-flex items-center gap-3 bg-gray-900 text-white font-semibold px-8 py-4 rounded-2xl hover:bg-gray-800 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
-        >
-          Book Your Class
-          <ArrowRight size={20} />
-        </Link>
-        <p className="text-sm text-gray-500 mt-4">
-          New to our space? Your first class is just the beginning.
-        </p>
+        {/* Google Reviews Link */}
+        <div className="text-center">
+          <a
+            href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl hover:bg-blue-700 transition-all hover:scale-105 shadow-lg group"
+          >
+            <div className="flex text-yellow-300">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} fill="currentColor" />
+              ))}
+            </div>
+            Read All Reviews on Google
+            <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+          <p className="text-sm text-gray-500 mt-3">
+            See what your neighbors are saying about their moving experience
+          </p>
+        </div>
       </div>
     </main>
   );

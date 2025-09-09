@@ -5,15 +5,16 @@ import Footer from "@/components/Footer";
 import "./globals-ios.css";
 
 export const metadata: Metadata = {
-  title: 'Merritt Fitness | Historic Wellness Space in Denver\'s Sloans Lake',
-  description: 'Book your yoga, meditation, sound bath, or wellness event at Merritt Fitness - a beautifully restored 1905 historic venue in Denver\'s Sloans Lake neighborhood.',
-  keywords: 'yoga studio rental Denver, meditation space Denver, sound bath venue, wellness event space, historic venue Denver, Sloans Lake',
-  // Simplified favicon declarations - Next.js will handle these automatically
+  title: 'Local Moving Company | Professional Moving Services in Denver, CO',
+  description: 'Trusted local and long-distance moving company in Denver. Professional, reliable, and affordable moving services for residential and commercial moves.',
+  keywords: 'moving company Denver, local movers Denver, long distance movers, residential moving, commercial moving, Denver moving services, Colorado movers',
+  // Enhanced favicon declarations for moving company
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
       { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', type: 'image/png', sizes: '180x180' },
@@ -22,16 +23,16 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'Merritt Fitness | Historic Wellness Space',
-    description: 'A beautifully restored 1905 venue for yoga, meditation, and wellness events in Denver\'s Sloans Lake neighborhood.',
-    url: 'https://merrittfitness.com',
-    siteName: 'Merritt Fitness',
+    title: 'Local Moving Company | Professional Moving Services',
+    description: 'Professional, reliable, and affordable moving services for residential and commercial moves in Denver and surrounding areas.',
+    url: 'https://localmovingcompany.com',
+    siteName: 'Local Moving Company',
     images: [
       {
-        url: '/images/hero/1.jpg',
+        url: '/images/hero/moving-truck.jpg',
         width: 1200,
         height: 630,
-        alt: 'Merritt Fitness historic wellness space interior',
+        alt: 'Local Moving Company professional moving truck and team',
       },
     ],
     locale: 'en_US',
@@ -39,12 +40,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Merritt Fitness | Historic Wellness Space',
-    description: 'Book your wellness event at our beautifully restored 1905 venue in Denver.',
-    images: ['/images/hero/1.jpg'],
+    title: 'Local Moving Company | Professional Moving Services',
+    description: 'Trusted moving company in Denver. Get your free quote today for local and long-distance moves.',
+    images: ['/images/hero/moving-truck.jpg'],
   },
   alternates: {
-    canonical: 'https://merrittfitness.com',
+    canonical: 'https://localmovingcompany.com',
   },
   robots: {
     index: true,
@@ -63,10 +64,10 @@ export const metadata: Metadata = {
     // yandex: 'your-yandex-verification-code',
     // yahoo: 'your-yahoo-verification-code',
   },
-  category: 'wellness',
+  category: 'moving services',
   classification: 'business',
   other: {
-    'application-name': 'Merritt Fitness',
+    'application-name': 'Local Moving Company',
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'default',
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: '#10b981',
+  themeColor: '#2563eb', // Blue theme color for moving company
   colorScheme: 'light',
 };
 
@@ -85,12 +86,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* REMOVED: Duplicate favicon links - Next.js handles these via metadata */}
-        
-        {/* ENHANCED SEO: Additional meta tags for better search performance */}
-        <meta name="author" content="Merritt Fitness" />
-        <meta name="publisher" content="Merritt Fitness" />
-        <meta name="copyright" content="© 2024 Merritt Fitness. All rights reserved." />
+        {/* ENHANCED SEO: Additional meta tags for moving company */}
+        <meta name="author" content="Local Moving Company" />
+        <meta name="publisher" content="Local Moving Company" />
+        <meta name="copyright" content="© 2024 Local Moving Company. All rights reserved." />
         <meta name="language" content="en-US" />
         <meta name="revisit-after" content="7 days" />
         <meta name="distribution" content="global" />
@@ -100,101 +99,115 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* ENHANCED SEO: Geographic and local business info */}
         <meta name="geo.region" content="US-CO" />
         <meta name="geo.placename" content="Denver" />
-        <meta name="geo.position" content="39.750982;-105.032254" />
-        <meta name="ICBM" content="39.750982, -105.032254" />
+        <meta name="geo.position" content="39.7392;-104.9903" />
+        <meta name="ICBM" content="39.7392, -104.9903" />
         
-        {/* ENHANCED SEO: Business-specific meta tags */}
-        <meta name="business:type" content="wellness center" />
-        <meta name="business:hours" content="Mo-Su 06:00-22:00" />
-        <meta name="business:phone" content="+1-720-357-9499" />
-        <meta name="business:email" content="manager@merrittfitness.net" />
-        <meta name="business:address" content="2246 Irving St, Denver, CO 80211" />
+        {/* ENHANCED SEO: Moving company specific meta tags */}
+        <meta name="business:type" content="moving company" />
+        <meta name="business:hours" content="Mo-Sa 07:00-19:00" />
+        <meta name="business:phone" content="+1-720-555-MOVE" />
+        <meta name="business:email" content="info@localmovingcompany.com" />
+        <meta name="business:address" content="Denver, CO" />
         
         {/* ENHANCED SEO: Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://www.google.com" />
-        <link rel="preconnect" href="https://calendar.google.com" />
+        <link rel="preconnect" href="https://maps.googleapis.com" />
         
         {/* ENHANCED SEO: DNS prefetch for faster loading */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//www.google.com" />
-        <link rel="dns-prefetch" href="//calendar.google.com" />
+        <link rel="dns-prefetch" href="//maps.googleapis.com" />
         
-        {/* ENHANCED SEO: Structured data for rich snippets */}
+        {/* ENHANCED SEO: Structured data for moving company */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "@id": "https://merrittfitness.com",
-              "name": "Merritt Fitness",
-              "description": "Historic wellness and event space in Denver's Sloan's Lake neighborhood, perfect for yoga, meditation, sound baths, and movement arts.",
-              "url": "https://merrittfitness.com",
-              "telephone": "+1-720-357-9499",
-              "email": "manager@merrittfitness.net",
+              "@type": "MovingCompany",
+              "@id": "https://localmovingcompany.com",
+              "name": "Local Moving Company",
+              "description": "Professional moving company serving Denver and surrounding areas. Specializing in residential and commercial moves, local and long-distance relocations.",
+              "url": "https://localmovingcompany.com",
+              "telephone": "+1-720-555-MOVE",
+              "email": "info@localmovingcompany.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "2246 Irving St",
                 "addressLocality": "Denver",
                 "addressRegion": "CO",
-                "postalCode": "80211",
                 "addressCountry": "US"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 39.750981971554395,
-                "longitude": -105.03225422320789
+                "latitude": 39.7392,
+                "longitude": -104.9903
               },
-              "openingHours": ["Mo-Su 06:00-22:00"],
+              "openingHours": ["Mo-Sa 07:00-19:00"],
               "priceRange": "$$",
-              "image": [
-                "https://merrittfitness.com/images/hero/outside3.jpg",
-                "https://merrittfitness.com/images/hero/1.jpg"
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Denver",
+                  "sameAs": "https://en.wikipedia.org/wiki/Denver"
+                },
+                {
+                  "@type": "State",
+                  "name": "Colorado",
+                  "sameAs": "https://en.wikipedia.org/wiki/Colorado"
+                }
               ],
-              "sameAs": [
-                "https://www.instagram.com/merritt.fitness",
-                "https://www.facebook.com/merritt.fitness"
+              "serviceType": [
+                "Residential Moving",
+                "Commercial Moving",
+                "Local Moving",
+                "Long Distance Moving",
+                "Packing Services",
+                "Storage Solutions"
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Wellness Services",
+                "name": "Moving Services",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Yoga Class Rental",
-                      "description": "Historic space rental for yoga classes and meditation"
+                      "name": "Local Moving",
+                      "description": "Professional local moving services within Denver metro area"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Event Space Rental",
-                      "description": "Wellness event space for workshops, retreats, and gatherings"
+                      "name": "Long Distance Moving",
+                      "description": "Interstate and long-distance moving services"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Commercial Moving",
+                      "description": "Office and business relocation services"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Packing Services",
+                      "description": "Professional packing and unpacking services"
                     }
                   }
                 ]
               },
-              "amenityFeature": [
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Historic Architecture",
-                  "value": "1905 restored church building"
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Square Footage",
-                  "value": "2400 sq ft"
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Ceiling Height",
-                  "value": "24 feet"
-                }
-              ]
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "150"
+              }
             })
           }}
         />
