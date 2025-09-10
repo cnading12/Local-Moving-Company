@@ -91,15 +91,15 @@ export default function ContactPage() {
               ))}
             </div>
             <p className="text-gray-800 mb-4 leading-relaxed">
-              "Outstanding service from start to finish! The team was professional, careful with our belongings, and made our stressful move feel effortless. They even helped us move some last-minute items without any complaints. Highly recommend!"
+              "We had a great experience with Local Moving! With only a week to plan our move things were stressful and I didn’t think we would find good movers with such short notice. Man did we get lucky finding them! These guys are friendly, professional, and affordable! Highly recommend giving this locally owned business a try."
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                 <span className="text-blue-700 font-semibold text-sm">SJ</span>
               </div>
               <div>
-                <p className="font-medium text-gray-900">Sarah Johnson</p>
-                <p className="text-sm text-gray-500">Denver homeowner</p>
+                <p className="font-medium text-gray-900">Karoleigh Cosner</p>
+                <p className="text-sm text-gray-500">Fort Collins homeowner</p>
               </div>
             </div>
           </div>
@@ -113,15 +113,15 @@ export default function ContactPage() {
               ))}
             </div>
             <p className="text-gray-800 mb-4 leading-relaxed">
-              "Best moving experience we've ever had! The guys were incredibly efficient and took great care of our furniture. Fair pricing, no hidden fees, and they finished ahead of schedule. Will definitely use them again!"
+              "Spencer and Cole were great. We had a very small job and they took care of everything we needed help with. They were prompt, careful, and did great work!"
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
                 <span className="text-emerald-700 font-semibold text-sm">MR</span>
               </div>
               <div>
-                <p className="font-medium text-gray-900">Mike Rodriguez</p>
-                <p className="text-sm text-gray-500">Boulder resident</p>
+                <p className="font-medium text-gray-900">Jen Krafchick</p>
+                <p className="text-sm text-gray-500">Fort Collins Resident</p>
               </div>
             </div>
           </div>
@@ -135,14 +135,14 @@ export default function ContactPage() {
               ))}
             </div>
             <p className="text-gray-800 mb-4 leading-relaxed">
-              "These guys saved our move! Our original movers canceled last minute, and Local Moving Company stepped in with just 2 days notice. Professional, friendly, and reasonably priced. True lifesavers!"
+              "Here’s the deal, those two young gentlemen worked like they were in a pit crew changing tires in the Daytona 500, lighting fast got my 5 bed house packed and in the truck in no time. Very respectful and easy to communicate with. Highly recommend"
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
                 <span className="text-purple-700 font-semibold text-sm">AC</span>
               </div>
               <div>
-                <p className="font-medium text-gray-900">Amanda Chen</p>
+                <p className="font-medium text-gray-900">Brayden Edwards</p>
                 <p className="text-sm text-gray-500">Fort Collins family</p>
               </div>
             </div>

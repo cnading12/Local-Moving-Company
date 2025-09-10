@@ -194,15 +194,15 @@ export default function MovingHomepage() {
                 {/* Enhanced Stats */}
                 <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
                   <div className="text-center group">
-                    <div className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">98%</div>
+                    <div className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">100%</div>
                     <div className="text-sm text-gray-500 uppercase tracking-wide">Customer Satisfaction</div>
                   </div>
                   <div className="text-center group">
-                    <div className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">500+</div>
+                    <div className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">50+</div>
                     <div className="text-sm text-gray-500 uppercase tracking-wide">Successful Moves</div>
                   </div>
                   <div className="text-center group">
-                    <div className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">3</div>
+                    <div className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">5+</div>
                     <div className="text-sm text-gray-500 uppercase tracking-wide">Cities Served</div>
                   </div>
                 </div>
@@ -223,11 +223,11 @@ export default function MovingHomepage() {
               <div className="grid grid-cols-2 gap-6 auto-rows-fr">
                 <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 hover:-translate-y-2 flex flex-col">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
-                    <Shield className="w-8 h-8 text-blue-700" />
+                    <TrendingUp className="w-8 h-8 text-blue-700" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors duration-300 flex-shrink-0">Fully Insured & Licensed</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors duration-300 flex-shrink-0">Affordable & Transparent</h3>
                   <p className="text-gray-600 text-sm leading-relaxed flex-1">
-                    Complete protection for your belongings with comprehensive insurance and Colorado state licensing for peace of mind
+                    Competitive rates with no hidden fees. Clear upfront pricing and honest estimates for every move
                   </p>
                 </div>
 
@@ -462,8 +462,8 @@ export default function MovingHomepage() {
             {/* Trust Indicators */}
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
-                { number: "500+", label: "Successful Moves" },
-                { number: "98%", label: "Customer Satisfaction" },
+                { number: "50+", label: "Successful Moves" },
+                { number: "100%", label: "Customer Satisfaction" },
                 { number: "24/7", label: "Support Available" },
                 { number: "0", label: "Damage Claims" }
               ].map((item, index) => (
