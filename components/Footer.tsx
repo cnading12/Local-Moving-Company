@@ -14,7 +14,7 @@ export default function Footer() {
             <Instagram size={18} /> Instagram
           </Link>
           <Link
-            href="https://www.facebook.com/YOUR_FACEBOOK_PAGE"
+            href="https://www.facebook.com/profile.php?id=61576756012701"
             className="flex items-center gap-1 hover:text-blue-700 transition"
             target="_blank" rel="noopener"
           >
@@ -30,11 +30,11 @@ export default function Footer() {
             href="mailto:manager@merrittfitness.net"
             className="flex items-center gap-1 hover:text-rose-700 transition"
           >
-            <Mail size={18} /> manager@merrittfitness.net
+            <Mail size={18} /> info@localmovingcompany.co
           </a>
         </div>
         <div className="text-gray-400 text-xs text-center mt-2">
-          © {new Date().getFullYear()} Merritt Fitness. All rights reserved.
+          © {new Date().getFullYear()} Local Moving Company. All rights reserved.
         </div>
       </div>
     </footer>
