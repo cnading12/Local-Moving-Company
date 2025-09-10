@@ -380,6 +380,109 @@ export default function MovingHomepage() {
           </div>
         </section>
 
+{/* PRICING SECTION */}
+        <section className="py-24 bg-gradient-to-b from-white to-gray-50 relative">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-20">
+              <span className="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 text-sm font-semibold rounded-full tracking-wide uppercase mb-6">
+                <DollarSign className="w-4 h-4 mr-2" />
+                Transparent Pricing
+              </span>
+              <h2 className="text-4xl md:text-5xl font-light leading-tight text-gray-900 mb-6">
+                Simple, Honest
+                <span className="block font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text">No Hidden Fees</span>
+              </h2>
+              <div className="w-24 h-0.5 bg-gradient-to-r from-orange-500 to-transparent mx-auto mb-8"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                We believe in straightforward pricing. One rate covers everything you need for a successful move.
+              </p>
+            </div>
+
+            {/* Main Pricing Card */}
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
+                <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white text-center py-8 px-6">
+                  <h3 className="text-3xl font-bold mb-2">All-Inclusive Moving Rate</h3>
+                  <p className="text-blue-200 text-lg">Everything you need, nothing you don't</p>
+                </div>
+
+                <div className="p-12">
+                  <div className="text-center mb-12">
+                    <div className="flex items-center justify-center mb-6">
+                      <span className="text-6xl md:text-7xl font-bold text-gray-900">$175</span>
+                      <span className="text-2xl text-gray-600 ml-2">/hour</span>
+                    </div>
+                    <div className="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold">
+                      <Info className="w-4 h-4 mr-2" />
+                      2-hour minimum required
+                    </div>
+                  </div>
+
+                  {/* What's Included Grid */}
+                  <div className="grid md:grid-cols-2 gap-8 mb-12">
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                        <CheckCircle className="w-6 h-6 text-green-500 mr-3" />
+                        What's Included
+                      </h4>
+                      <ul className="space-y-4">
+                        {[
+                          'Professional moving crew',
+                          'Fully equipped moving truck',
+                          'All moving equipment & tools',
+                          'Furniture pads & protection',
+                          'Dollies, straps & tie-downs'
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center text-gray-700">
+                            <div className="w-2 h-2 bg-green-500 rounded-full mr-4 flex-shrink-0"></div>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                        <Shield className="w-6 h-6 text-blue-500 mr-3" />
+                        No Hidden Fees
+                      </h4>
+                      <ul className="space-y-4">
+                        {[
+                          'No fuel surcharges',
+                          'No equipment rental fees',
+                          'No travel time charges',
+                          'No surprise add-ons',
+                          'Transparent billing'
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center text-gray-700">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+
+                  {/* CTA Button */}
+                  <div className="text-center">
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold px-12 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group"
+                    >
+                      <Calendar className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" />
+                      Get Your Free Quote
+                    </Link>
+                    <p className="text-sm text-gray-500 mt-4">
+                      Free estimates • No obligation • Same-day response
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* QUOTE SECTION */}
         <section id="quote" className="py-24 bg-blue-900 relative overflow-hidden">
           <div className="absolute inset-0">
