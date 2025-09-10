@@ -157,15 +157,15 @@ export default function ContactPage() {
               ))}
             </div>
             <p className="text-gray-800 mb-4 leading-relaxed">
-              "Exceptional service! They handled our piano and antique furniture with extreme care. The team was punctual, courteous, and went above and beyond. Worth every penny for the peace of mind."
+              "Spencer and Cole went above and beyond helping us move into our new house. They were very upfront about pricing, which was very appreciated, and moved heavier objects with ease. They treated our stuff as if it was their own. Thanks guys!"
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
                 <span className="text-orange-700 font-semibold text-sm">DW</span>
               </div>
               <div>
-                <p className="font-medium text-gray-900">David Wilson</p>
-                <p className="text-sm text-gray-500">Denver business owner</p>
+                <p className="font-medium text-gray-900">Bianca Lenssen</p>
+                <p className="text-sm text-gray-500">Denver Home Owner</p>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function ContactPage() {
         {/* Google Reviews Link */}
         <div className="text-center">
           <a
-            href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review"
+            href="https://g.page/r/CULDX6LkRQoNEAE/review"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl hover:bg-blue-700 transition-all hover:scale-105 shadow-lg group"

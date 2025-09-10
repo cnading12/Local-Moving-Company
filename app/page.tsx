@@ -130,14 +130,14 @@ export default function MovingHomepage() {
 
               <div className="w-24 h-px bg-gradient-to-r from-transparent via-orange-400/80 to-transparent mx-auto mb-8"></div>
               <p className="text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto opacity-95 drop-shadow-md">
-                Denver Metro's trusted moving professionals - where Colorado State graduate expertise meets reliable local service across Colorado
+                Not a faceless franchise. Just some friends helping their neighbors move.<br />Its that simple.
               </p>
             </div>
 
             {/* Enhanced CTA Section */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up-delay">
               <Link
-                href="#quote"
+                href="/contact"
                 className="group relative bg-orange-500 text-white font-semibold px-12 py-5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden backdrop-blur-sm"
               >
                 <span className="relative z-10 flex items-center">
@@ -305,7 +305,7 @@ export default function MovingHomepage() {
                   ))}
                 </ul>
                 <Link
-                  href="/residential"
+                  href="/contact"
                   className="inline-flex items-center text-blue-700 hover:text-blue-900 font-semibold group-hover:translate-x-1 transition-all duration-300"
                 >
                   Learn More
@@ -337,7 +337,7 @@ export default function MovingHomepage() {
                   ))}
                 </ul>
                 <Link
-                  href="/commercial"
+                  href="/contact"
                   className="inline-flex items-center text-orange-700 hover:text-orange-900 font-semibold group-hover:translate-x-1 transition-all duration-300"
                 >
                   Learn More
@@ -369,7 +369,7 @@ export default function MovingHomepage() {
                   ))}
                 </ul>
                 <Link
-                  href="/specialty"
+                  href="/contact"
                   className="inline-flex items-center text-purple-700 hover:text-purple-900 font-semibold group-hover:translate-x-1 transition-all duration-300"
                 >
                   Learn More
@@ -438,7 +438,7 @@ export default function MovingHomepage() {
             {/* Enhanced CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
               <Link
-                href="/quote"
+                href="/contact"
                 className="group relative bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold px-16 py-6 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 overflow-hidden"
               >
                 <span className="relative z-10 flex items-center text-lg">
