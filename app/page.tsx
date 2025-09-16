@@ -119,7 +119,7 @@ export default function MovingHomepage() {
               {/* UPDATED: Logo instead of text */}
               <div className="mb-8 flex justify-center">
                 <Image
-                  src="/images/hero/logo.png" // Update this path to your actual logo file
+                  src="/images/hero/Logo.svg" // Update this path to your actual logo file
                   alt="Local Moving Company - Professional Denver Metro Moving Services"
                   width={400} // Adjust width as needed
                   height={200} // Adjust height as needed

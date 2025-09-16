@@ -66,10 +66,10 @@ export default function Navbar() {
           {/* Logo - Updated for Moving Company */}
           <Link href="/" className="flex items-center shrink-0 z-50 group" tabIndex={0}>
             <Image
-              src="/images/hero/logo.png"
+              src="/images/hero/Logo.svg"
               alt="Local Moving Company Logo"
-              width={160}
-              height={70}
+              width={200}
+              height={90}
               className="transition-transform duration-200 group-hover:scale-105"
               priority
             />
@@ -143,7 +143,7 @@ export default function Navbar() {
               tabIndex={0}
             >
               <Image
-                src="/images/hero/logo.png"
+                src="/images/hero/Logo.svg"
                 alt="Local Moving Company Logo"
                 width={140}
                 height={60}
